@@ -23,11 +23,15 @@
   
   .controls {
     margin-bottom: 56px;
-    display: flex;
+    display:inline-flex;
     gap: 1rem;
+    
+    
+   
   }
   .controls button {
     font-size: xx-large;
     padding: 8px 16px;
+    
   }
-  
+    
