@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- our buttons section will not change much, so we can simply
+      declare it here in the HTML and leave it untouched -->
+      <div class="controls">
+        <button id="filter-dogs">Filter Dogs</button>
+        <button id="filter-cats">Filter Cats</button>
+        <button id="sort-by-name">Sort by Name</button>
+        <button id="sort-by-year">Sort by Year</button>
+        <button id="reset">Reset</button>
+      </div>
+      <!-- our animals section will change a lot (every time we filter or sort!) and, 
+        while we could go with a different approach, we are best off rendering this 
+        entire section dynamically with a render function based on data from our Javascript below -->
+      <div class="animals"></div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
